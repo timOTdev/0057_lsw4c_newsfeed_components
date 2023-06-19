@@ -17,3 +17,12 @@ menuButton.addEventListener('click', () => {
 
 TweenMax.from(".menu", 2, {x:-600, opacity:0})
 TweenMax.staggerFrom(".menu li", 1, {x:-600, opacity: 0}, 0.2)
+
+// const slideout = function() {
+//   TweenMax.to(".menu", 2, {x:-1500})
+// }
+
+document.querySelector('body').addEventListener('click', (e) => {
+  e.stopPropagation()
+  console.log("clicked")
+})
